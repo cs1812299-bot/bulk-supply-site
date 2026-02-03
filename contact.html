@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote | US Bulk Surplus</title>
+  <meta name="description" content="Contact US Bulk Surplus to request a quote for bulk materials. Fast response times and competitive pricing.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <span>Call: (000) 000-0000</span>
+      <span>Email: sales@yourdomain.com</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
+        US Bulk Surplus
+      </a>
+      <button class="mobile-menu-btn">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Available Loads</a>
+        <a href="logistics.html">Logistics</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-primary active">Request Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section" style="background-color: var(--primary); color: white; padding: 40px 0;">
+    <div class="container">
+      <h1>Request a Quote</h1>
+      <p>Tell us what you need and we'll get back to you within 24 hours.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+        
+        <!-- Contact Info -->
+        <div>
+          <h2>Get In Touch</h2>
+          <p style="margin-bottom: 20px;">Have quick questions? Give us a call or send an email.</p>
+          
+          <div style="margin-bottom: 20px;">
+            <strong>Phone:</strong><br>
+            <a href="tel:0000000000" style="color: var(--primary);">(000) 000-0000</a>
+          </div>
+          
+          <div style="margin-bottom: 20px;">
+            <strong>Email:</strong><br>
+            <a href="mailto:sales@yourdomain.com" style="color: var(--primary);">sales@yourdomain.com</a>
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <strong>Hours:</strong><br>
+            Mon-Fri: 8am - 5pm EST
+          </div>
+
+          <div style="background-color: #eee; padding: 20px; border-radius: 4px; margin-top: 20px;">
+            <p style="font-size: 0.9rem;"><strong>Note:</strong> We typically do not sell less than truckload (LTL) quantities due to shipping costs. Minimum order is usually 10 pallets or 20,000 lbs.</p>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div style="background: var(--white); padding: 30px; border: 1px solid var(--border); border-radius: 8px;">
+          <h2 style="margin-bottom: 20px;">Quote Form</h2>
+          <form id="quote-form">
+            <div class="form-group">
+              <label class="form-label" for="name">Full Name *</label>
+              <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="company">Company Name</label>
+              <input type="text" id="company" name="company" class="form-input">
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+              <div class="form-group">
+                <label class="form-label" for="email">Email *</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" class="form-input" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="material">Material of Interest</label>
+              <select id="material" name="material" class="form-select">
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Mixed Clothing Rags">Mixed Clothing Rags</option>
+                <option value="Mixed Glass Loads">Mixed Glass Loads</option>
+                <option value="Other">Other (Specify in notes)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="quantity">Approx Quantity</label>
+              <select id="quantity" name="quantity" class="form-select">
+                <option value="One Time Load">One Time Load</option>
+                <option value="Weekly">Weekly Volume</option>
+                <option value="Monthly">Monthly Volume</option>
+                <option value="Test Load">Test Load</option>
+              </select>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+              <div class="form-group">
+                <label class="form-label" for="pickup">Pickup City/State (If Customer Pickup)</label>
+                <input type="text" id="pickup_location" name="pickup_location" class="form-input" placeholder="e.g. Dallas, TX">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="delivery">Delivery City/State</label>
+                <input type="text" id="delivery_location" name="delivery_location" class="form-input" placeholder="e.g. Chicago, IL">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="timeline">Timeline</label>
+              <input type="text" id="timeline" name="timeline" class="form-input" placeholder="e.g. ASAP, Next Month">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="notes">Notes / Special Requirements</label>
+              <textarea id="notes" name="notes" class="form-textarea" placeholder="Describe your needs..."></textarea>
+            </div>
+
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <button type="submit" class="btn btn-primary" style="flex: 1;">Generate Email Quote</button>
+              <button type="button" id="copy-quote" class="btn btn-outline" style="border-color: var(--border); color: var(--text-dark);">Copy Details</button>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 10px;">Clicking generate will open your default email client.</p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>US Bulk Surplus</h3>
+          <p>Professional supplier of bulk recyclable materials.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul class="footer-links">
+            <li>(000) 000-0000</li>
+            <li>sales@yourdomain.com</li>
+            <li>Service Area: USA</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="products.html">Available Loads</a></li>
+            <li><a href="logistics.html">Logistics</a></li>
+            <li><a href="contact.html">Request Quote</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2024 US Bulk Surplus. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
