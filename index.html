@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bulk Surplus Supply</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container header__inner">
+    <div class="logo">Bulk Surplus Supply</div>
+    <nav>
+      <a href="#home" data-route>Home</a>
+      <a href="#loads" data-route>Available Loads</a>
+      <a href="#logistics" data-route>Logistics</a>
+      <a href="#about" data-route>About</a>
+      <a href="#contact" data-route>Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home" data-page>
+  <div class="container">
+    <h1>Mixed Clothing Rags & Glass Loads</h1>
+    <p>Bulk truckload and palletized surplus materials available across the USA.</p>
+    <a class="btn" href="#contact" data-route>Request Quote</a>
+  </div>
+</section>
+
+<section id="loads" data-page hidden>
+  <div class="container">
+    <h2>Available Loads</h2>
+    <h3>Mixed Clothing Rags</h3>
+    <p>Truckload quantities suitable for recyclers and exporters.</p>
+
+    <h3>Mixed Glass Loads</h3>
+    <p>Palletized loads suitable for recyclers and bulk buyers.</p>
+  </div>
+</section>
+
+<section id="logistics" data-page hidden>
+  <div class="container">
+    <h2>Logistics</h2>
+    <p>Buyer pickup or shipping coordination available nationwide.</p>
+  </div>
+</section>
+
+<section id="about" data-page hidden>
+  <div class="container">
+    <h2>About Us</h2>
+    <p>We supply bulk reusable and recyclable materials across the United States.</p>
+  </div>
+</section>
+
+<section id="contact" data-page hidden>
+  <div class="container">
+    <h2>Request a Quote</h2>
+    <form id="quoteForm">
+      <input name="name" placeholder="Name" required>
+      <input name="email" placeholder="Email" required>
+      <select name="material" required>
+        <option value="">Material</option>
+        <option>Mixed Clothing Rags</option>
+        <option>Mixed Glass Loads</option>
+      </select>
+      <textarea name="notes" placeholder="Details"></textarea>
+      <button type="submit" class="btn">Send Request</button>
+    </form>
+    <p id="formStatus"></p>
+  </div>
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
